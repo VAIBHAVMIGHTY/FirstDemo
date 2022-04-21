@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Document</title>
+    <style>
+         #logo{
+           padding-right: 800px;
+       }
+       #header{
+           display: flex;
+       }
+       div ul li a{
+            text-decoration: none;
+            padding-right: 50px;
+       }
+       #logo{
+           max-height: 50px;
+           padding-right: 800px;
+       }
+       .st{
+            width: 50px;
+            height: 150px;
+            padding-right: 160px;
+            background-color: bisque;
+       }
+       /* #ban{
+           padding-left: 300px;
+           padding-right: 100px;
+       }
+      #banner{
+          background-color: red;
+      } */
+     #dif{
+         display: flex;
+     }
+     #right{
+         width: 2px;
+         height: 2px;
+         background-color: red;
+         padding-top: 140px;
+         padding-right: 0px;
+     }
+     #left{
+         width: 2px;
+         height: 2px;
+         background-color: red;
+         padding-top: 140px;
+         padding-right: 0px;
+     }
+     header{
+     display: flex;
+     justify-content: space-evenly;
+     background-color: #2874f0;
+     width: 100%;
+     height: 56px;
+   position: sticky;
+   top: 0px;
+   z-index: 1;
+ }
+ .header-left{
+     width: 20%;
+     text-align: right;
+     margin: 5px 0px;
+     cursor: pointer;
+ }
+ .header-left a{
+     color: white;
+     font-size: 20px;
+     text-decoration: none;
+     font-weight: bold;
+     font-style: italic;
+     letter-spacing: 1.5px;
+     
+ }
+ .header-left-p a{
+    font-size: 10px;
+    letter-spacing: 1.5px;
+ }
+ .header-left-p span{
+     color: yellow;
+     font-size: 10px;
+     letter-spacing: 1px;
+ }
+ .header-left-p:hover{
+     text-decoration: underline;
+     color: white;
+ }
+ .header-center{
+     width: 40%;
+     text-align: left;
+     line-height: 50px;
+     cursor: pointer;
+     padding-left: 10px;
+     position: relative;
+ }
+ .header-center-input{
+     height: 36px;
+     width: 100%;
+     border: none;
+     text-align: left;
+     padding-left: 20px;
+     cursor: pointer;
+ }
+ .fa-search{
+     position: absolute;
+     top: 30%;
+     left: 94%;
+     font-size: 18px;
+     color: #2874f0;
+ }
+ .header-right{
+     width: 40%;
+     font-size: 15px;
+     display: flex;
+   justify-content: flex-start;
+   text-transform: capitalize;
+   line-height: 50px;
+ }
+ .header-right a{
+     text-decoration: none;
+     color: white;
+     margin: 0px 25px;
+ }
+ .header-right .active{
+     background-color: white;
+     color: #2874f0;
+     padding: 5px 30px;
+     height: 35px;
+     width: 130px;
+     line-height: 23px;
+     margin-top: 8px;
+     border-radius: 2px;
+     text-align: center;
+ }
+ .fa-shopping-cart{
+     padding-right: 10px;
+ }
+ .fa-sort-down{
+     padding-left: 5px;
+
+ }
+
+ /* <!-- category-section --> */
+
+
+ .category-row{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     height: auto;
+     margin-top: 10px;
+     text-align: center;
+ }
+ .category-col{
+     padding: 10px 0px;
+     cursor: pointer;
+     color: rgb(85,83,83);
+ }
+
+ .category-col img{
+     width: 64px;
+     height: 64px;
+ }
+ .category-col h5:hover{
+    color: #2874f0;
+ }
+/* <!-- banner section --> */
+.banner{
+ 
+ width: 100%;
+ overflow: hidden;
+ 
+}
+.slider{
+    width: 4098;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    animation-name: slide;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+ 
+ 
+/* common for all */
+
+/* <!-- Mobile section --> */
+
+.card{
+    box-shadow: rgb(177,174,174) 0px 0px 5px 1px;
+    padding: 10px 0px;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+ .common-heading{
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     padding: 5px 20px;
+     margin-top: 20px;
+     box-shadow: 0 1px 1px 0 rgb(0 0 0 /16%);
+ }
+ .common-heading-left h1{
+     font-size: 20px;
+     font-weight: 400;
+     padding:auto;
+ }
+ .common-heading-left h2{
+     font-size: 15px;
+     padding: 5px 0px;
+     color: rgb(145,141,138) ;
+     font-weight: 200;
+ }
+ .common-heading-right button{
+     width: 90px;
+     height: 40px;
+     font-size: 18px;
+     background-color: #2874f0;
+     border: none;
+     color: white;
+     border-radius: 2px;
+ }
+ .common-row{
+     display: flex;
+     justify-content: space-evenly;
+     width: 100%;
+     max-height: 366px;
+     margin: 10px 0px;
+ }
+ .common-col{
+     text-align: center;
+     line-height: 22px;
+ }
+ .common-col img{
+     width: 69px;
+     height: 150px;
+     transition: 300ms;
+ }
+ .common-col img:hover{
+     transform: scale(0.9);
+ }
+ .common-col h3,h4,h6{
+     text-transform: capitalize;
+     letter-spacing: 1px;
+     cursor: pointer;
+ }
+ .common-col h3{
+     margin-top: 10px;
+     font-size: 16px;
+ }
+ .common-col h4{
+     color: green;
+     font-size: 14px;
+     font-weight: 300;
+ }
+ .common-col h6{
+    color: rgb(161,161,161);
+    font-size: 12px;
+    font-weight: 100;
+ }
+
+ 
+ /* <!-- headphones and speaker section --> */
+.col-headphones img{
+    width: 125px;
+    height: 150px;
+}
+/* <!-- mens clothing --> */
+.col-men img{
+    width: 100px;
+    height: 150px;
+}
+/* <!-- Furniture Bestsellers section --> */
+
+
+.col-furniture img{
+  width: 130px;
+  width: 150px;
+}
+/* <!-- trending offers section --> */
+.col-tranding img{
+    width: 80px;
+    height: 150px;
+}
+img:hover{
+    width: 150px;
+    height: 280px;
+}
+footer{
+    background-color: #172337;
+    height: 332;
+}
+.footer-row{
+    width: 100%;
+    height: 270px;
+    display: flex;
+    padding: 30px 60px;
+}
+.footer-row2{
+    display: flex;
+    border-top: 1px solid #454d5e;
+    justify-content: space-evenly;
+}
+.footer-col-1{
+    width: 15%;
+}
+.footer-col-2{
+    width: 15%;
+}
+.footer-col-3{
+    width: 15%;
+}
+.footer-col-4{
+    width: 10%;
+}
+.footer-col-5{
+    width: 20%;
+    border-left:1px solid #454d5e ;
+    height: 120px;
+    padding-left: 25px;
+}
+.footer-col-6{
+    width: 20%;
+    padding-left: 50px;
+}
+.footer-heading p{
+ color: #878787;
+ font-size: 12px;
+ font-weight: 400;
+ text-align: left;
+ padding: 10px 0px;
+ cursor: pointer;
+ text-transform: uppercase;
+}
+.footer-list a{
+    text-align: left;
+    display: block;
+    text-decoration: none;
+   text-transform: capitalize;
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+.footer-list a:hover{
+    text-decoration: underline;
+}
+.footer-list  p{
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+    padding:5px 0px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.footer-list-address p{
+    text-align: left;
+    display: block;
+    color: white;
+    font-size: 12px;
+    font-weight: 100px;
+    line-height: 20px;
+     cursor: pointer;
+}
+.footer-list-address span{
+    color: rgb(60,109,245);
+    cursor: pointer;
+}
+.footer-row2-col p{
+  color: white;
+    font-size: 15px;
+    font-weight: 100px;
+    line-height: 20px;
+     cursor: pointer;
+      text-align: center;
+      line-height: 50px;
+      letter-spacing: .7px;
+}
+.fa-shopping-bag, .fa-star, .fa-gift ,.fa-question-circle{
+    color: #ffd700;
+    cursor: pointer;
+   padding-right: 10px;
+   font-size: 15px;
+}
+#payment{
+    padding-top: 18px;
+}
+#exam{
+    padding-left: 3px;
+    padding-right: 100px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container img{
+    margin-left: 0;
+}
+#bmw{
+    padding-right: 30px;
+}
+.container{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <a href="#" id="bmw"><img src="https://wallsdesk.com/wp-content/uploads/2016/05/BMW-Logo-PNG.png" alt="" width="80px" height="30px"></a>
+         <a href="#" id="exam">Exampil</a>
+      </div>
+        <div class="header-center">
+      <input class="header-center-input" type="text" placeholder=" Search for products,Brands and more"><i class="fas fa-search"></i>
+        </div>
+        <div class="header-right">
+          <a class="active" href="#">home</a>
+          <a href="#">About<i class="fas fa-sort-down"></i></a>
+          <a href="#"><i class="fas fa-shopping-cart"></i>contacts</a>
+        </div>
+   </header>
+
+    <div class="container">
+        <img src="template.jpg" alt="Snow" style="width:100%;">
+        <div class="centered" style="color: crimson; font-size: 1.2rem; font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;" width="4500px"><h1>welcome to <br> exampil</h1></div>
+      </div> 
+     <!-- <a href="#"><img src="template.jpg" alt="no image found" width="1500px" height="300px"></a> -->
+
+  
+    <div id="shirts">
+        <h1>mobiles prices</h1>
+        <section>
+            <div class="card">
+                <div class="common-heading">
+                    <div class="common-heading-left">
+                     <h1>Best Battery Phones</h1>
+                     <h2>More than 4000mAh</h2>
+                    </div>
+                    <div class="common-heading-right">
+                    </div>
+                </div>
+                <div class="common-row">
+                    <div class="common-col">
+                        <img src=" flipkart images/p1.jpeg" alt="mobile">
+                        <h3>Poco m2 pro</h3>
+                        <h4>5000mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>13999</h6>
+                    </div>
+                    <div class="common-col">
+                        <img src=" flipkart images/p2.jpeg" alt="mobile">
+                        <h3>techo spark</h3>
+                        <h4>4500mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>14999</h6>
+                    </div>
+                    <div class="common-col">
+                        <img src=" flipkart images/p3.jpeg" alt="mobile">
+                        <h3>vivio</h3>
+                        <h4>5000mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>15999</h6>
+                    </div>
+                    <div class="common-col">
+                        <img src=" flipkart images/p4.jpeg" alt="mobile">
+                        <h3>samsung</h3>
+                        <h4>5500mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>23999</h6>
+                    </div>
+                    <div class="common-col">
+                        <img src=" flipkart images/p5.jpeg" alt="mobile">
+                        <h3>realme</h3>
+                        <h4>5000mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>13999</h6>
+                    </div>
+                    <div class="common-col">
+                        <img src=" flipkart images/p6.jpeg" alt="mobile">
+                        <h3>oppo pro</h3>
+                        <h4>5200mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>18999</h6>
+                    </div>
+                    <div class="common-col">
+                        <img src=" flipkart images/p7.jpeg" alt="mobile">
+                        <h3>samsung</h3>
+                        <h4>5000mAh Bttery</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>11999</h6>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        
+           <!-- headphones and speaker section -->
+        
+        
+           <section>
+               <h1>earphones prices</h1>
+               <div class="card">
+                   <div class="common-heading">
+                    <div class="common-heading-left">
+                        <h1>Top Deals on Electronics</h1>
+                        <h2>Up to 70% OFF</h2>
+                    </div>
+                    <div class="common-heading-right">
+                    </div>
+                   </div>
+                   <div class="common-row">
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s1.jpeg" alt="mobile">
+                        <h3> Bluetooth Headphones</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>399</h6>
+                    </div>
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s2.jpeg" alt="mobile">
+                        <h3>techo speaker</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>499</h6>
+                    </div>
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s3.jpeg" alt="mobile">
+                        <h3>true wireless</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>159</h6>
+                    </div>
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s4.jpeg" alt="mobile">
+                        <h3>wired hearphones</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>239</h6>
+                    </div>
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s5.jpeg" alt="mobile">
+                        <h3>speaker</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>139</h6>
+                    </div>
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s6.jpeg" alt="mobile">
+                        <h3>Bluetooth Headphones</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>1899</h6>
+                    </div>
+                    <div class="common-col col-headphones">
+                        <img src=" flipkart images/s7.jpeg" alt="mobile">
+                        <h3>Bluetooth Headphones</h3>
+                        <h4>new lancher</h4>
+                        <h6>Now<i class="fas fa-rupee-sign"></i>999</h6>
+                    </div>
+                    
+                </div>
+               </div>
+           </section>
+    </div>
+        <footer>
+
+            <div class="footer-row">
+                <div class="footer-col-1">
+                    <div class="footer-heading">
+                         <p>ABOUT</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Contact Us</a>
+                        <a href="#">About Us</a>
+                        <a href="#">Careers</a>
+                        <a href="#">exampil Stories</a>
+                        <a href="#">Press</a>
+                        <a href="#">exampil Wholesale</a>
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <div class="footer-heading">
+                         <p>HELP</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Payments</a>
+                        <a href="#">Shipping</a>
+                        <a href="#">Cancellation & Returns</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Report Infringement</a>
+                        
+                    </div>
+                </div>
+                <div class="footer-col-3">
+                    <div class="footer-heading">
+                         <p>POLICY</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Return Policy</a>
+                        <a href="#">Terms Of Use</a>
+                        <a href="#">Security</a>
+                        <a href="#">Privacy</a>
+                        <a href="#">Sitemap</a>
+                        <a href="#">EPR Compliance</a>
+                    </div>
+                </div>
+                <div class="footer-col-4">
+                    <div class="footer-heading">
+                         <p>SOCIAL</p>
+                    </div>
+                    <div class="footer-list">
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#">YouTube</a>
+                       
+                    </div>
+                </div>
+        
+                <div class="footer-col-5">
+                    <div class="footer-heading">
+                         <p>Mail Us</p>
+                    </div>
+                    <div class="footer-list">
+                         <p>exampil Internet Private Limited,
+                            Buildings Alyssa, Begonia &
+                            Clove Embassy Tech Village,
+                            Outer Ring Road, Devarabeesanahalli Village,
+                            Bengaluru, 560103,
+                            Karnataka, India</p>
+                       
+                    </div>
+                </div>
+        
+                <div class="footer-col-6">
+                    <div class="footer-heading">
+                         <p>Registered Office Address</p>
+                    </div>
+                    <div class="footer-list-address">
+                     <p>exampil Internet Private Limited,</p>
+                     <p>powai near mtnl telephone exchange</p>
+                     <p>Clove Embassy Tech Village,</p>
+                     <p>Outer Ring Road, Devarabeesanahalli Village,</p>
+                     <p>Bengaluru, 560103,</p>
+                     <p>CIN : U51109KA2012PTC066107</p>
+                     <p> Telephone:<span> 1800 202 9898</span></p>
+                       
+                    </div>
+                </div>
+            </div>
+            <div class="footer-row2">
+                <div class="footer-row2-col">
+                    <p> <i class="fas fa-shopping-bag"></i>Sell On exampil</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-star"></i>Advertise</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-gift"></i>Gift Cards</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p><i class="fas fa-question-circle"></i>Help Center</p>
+                </div>
+                <div class="footer-row2-col">
+                    <p>© 2007-2021 exampil.com</p>
+                </div>
+                <div class="footer-row2-col" id="payment">
+                    <img src=" flipkart images/payment.png" alt="payments">
+                </div>
+            </div>
+        </footer>
+</body>
+</html>
